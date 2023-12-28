@@ -8,7 +8,7 @@ class PhonePeController extends PhonePe
 {
     public function phonePePayment()
     {
-        $url = $this->makePayment(1000, '9999999999', route('phonepe.callback'), '1');
+        $url = $this->makePayment(2, '9999999999', route('phonepe.callback'), '1');
         return redirect()->away($url);
     }
 
